@@ -1,0 +1,343 @@
+body {
+	font: 100%/1.4 Georgia, "Times New Roman", Times, serif;
+	background: #CCCCCC;
+	margin: 0;
+	padding: 0;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+}
+a:visited {
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: underline;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 960px;
+	margin: 0 auto;
+	background: #FFFFCC;
+}
+
+.header {
+	height: 80px;
+	width: 960px;
+	line-height: 110px;
+}
+
+.logo img {
+	float: left;
+	height: 80px;
+	width: 400px;
+	padding-left: 10px;
+	padding-right: 50px;
+}
+
+.menuitem {
+	float: left;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 22px;
+}
+
+.menuitem a {
+	color: #000000;
+	text-decoration: none;
+}
+
+.menuitem a:hover, a:active, a:focus { 
+	color: #075A16;
+}
+
+.header_image {
+	background: #FFFFCC; 
+	height: 450px;
+	width: 960px;
+}
+
+.header_image img {
+	margin-top: -30px;
+}
+
+.content {
+	padding: 0px;
+	width: 960px;
+	text-align: left;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color: #333333;
+}
+
+.content a {
+	color: #075A16;
+	text-decoration: none;
+	font-style: italic;
+}
+
+.content a:hover, a:active, a:focus {
+	color: #000000;
+}
+
+.tile_left {
+	float: left;
+	padding: 10px;
+	padding-left: 20px;
+	width: 62%;
+}
+
+.tile_right {
+	float: right;
+	padding: 10px;
+	padding-right: 20px;
+	width: 31.8%;
+}
+
+.tile_content {
+	padding: 10px;
+	margin-bottom: 30px;
+	padding-bottom: 35px;
+	background: #DDDDAA;
+}
+
+.tile_content img {
+	height: 160px;
+	width: 160px;
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-right: 5px;
+	margin-bottom: 0px;
+	position: relative;
+}
+
+.tile_content iframe {
+	overflow: hidden;
+	width: 300px;
+	height: 60px;
+	margin-left: 5px;
+	margin-bottom: -20px;
+}
+
+.tile_content p {
+	margin-bottom: 0px;
+}
+
+.tile_content .dropcap {
+	font-size: 150%;
+}
+
+.tile_content .more a {
+	float: right;
+	padding-top: 5px;
+}
+
+.tile_content .date {
+	color: #075A16;
+	font-style: italic;
+}
+
+
+
+.footer {
+	height: 40px;
+	width: 960px;
+	padding: 10px 0;
+	background: #CCCCCC;
+	color: #075A16;
+	clear: both;
+}
+
+.footer_content_left {
+	float: left;
+}
+
+.footer_content_right {
+	float: right;
+}
+
+.footer a {
+	color: #075A16;
+	text-decoration: none;
+	font-style: italic;
+}
+
+.footer a:hover, a:active, a:focus {
+	color: #000000;
+}
+
+
+.bio_images {
+	text-align: center;
+	font-style: italic;
+}
+
+.bio_image {
+	height: 250px;
+	width: 166px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.bio_video {
+	float: right;
+}
+
+
+.album {
+	margin-left: 15px;
+	padding: 10px;
+	padding-bottom: 20px;
+	overflow: hidden;
+}
+
+.album .album_image {
+	float: left;
+}
+
+.album .album_image img {
+	height: 160px;
+	width: 160px;
+}
+
+.album .album_info {
+	float: left;
+	width: 435px;
+	height: 200px;
+	padding: 10px;
+	margin-top: -20px;
+}
+
+.album .album_info span {
+	margin-top: 5px;
+}
+
+.album .album_info .album_title {
+	float: left;
+	font-weight: bold;
+	font-size: 140%;
+}
+
+.album .album_info .album_description {
+	float: left;
+}
+
+.album .album_info .album_purchase {
+	float: left;
+}
+
+.album .album_reviews {
+	float: right;
+	width: 310px;
+}
+
+.album .album_reviews .album_review {
+	font-size: 80%;
+	font-style: italic;
+	padding: 5px;
+	margin: 10px;
+	margin-bottom: 25px;
+	background: #DDDDAA;
+}
+
+.album .album_reviews .album_review a {
+	float: right;
+	margin-top: 8px;
+}
+
+.lyrics_table {
+	text-align: center;
+}
+
+.lyrics_table td {
+	vertical-align: top;
+}
+
+.lyrics_table .album_title span {
+	font-weight: bold;
+}
+
+.lyrics_table .album_cover {
+	text-align: center;
+}
+
+.lyrics_table .album_cover img {
+	width: 230px;
+	padding-bottom: 20px;
+}
+
+
+.lyric_image {
+	float: right;
+	padding: 20px;
+	padding-right: 60px;
+	text-align: right;
+}
+
+.lyric_title {
+	font-size: 140%;
+	font-weight: bold;
+	padding-left: 40px;
+}
+
+.lyric_author {
+	font-size: 120%;
+	font-style: italic;
+	padding-left: 40px;
+	padding-bottom: 10px;
+}
+
+.lyrics {
+	padding-left: 30px;
+}
+
+
+.contact_table {
+	margin: 10px;
+	margin-left: 40px;
+}
+
+.contact_table tr {
+	height: 70px;
+}
+
+.contact_table .contact_type {
+	width: 150px;
+	font-size: 120%;
+	font-weight: bold;
+}
+
+.contact_table .fb {
+	height: 60px;
+}
+
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container *w/
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+-->
+
