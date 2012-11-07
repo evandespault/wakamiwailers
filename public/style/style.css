@@ -60,6 +60,14 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	text-decoration: none;
 }
 
+.selected {
+}
+
+.selected a {
+	text-decoration: underline;
+	background-image: url(../img/wakami_wailers_title2_FFFFCC.jpg);
+}
+
 .menuitem a:hover, a:active, a:focus { 
 	color: #075A16;
 }
@@ -96,20 +104,22 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	float: left;
 	padding: 10px;
 	padding-left: 20px;
-	width: 62%;
+	width: 62.4%;
 }
 
 .tile_right {
 	float: right;
-	padding: 10px;
+	padding-top: 10px;
+	padding-left: 0px;
 	padding-right: 20px;
-	width: 31.8%;
+	width: 31.4%;
 }
 
 .tile_content {
-	padding: 10px;
-	margin-bottom: 30px;
-	padding-bottom: 35px;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
 	background: #DDDDAA;
 }
 
@@ -128,11 +138,9 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	width: 300px;
 	height: 60px;
 	margin-left: 5px;
-	margin-bottom: -20px;
 }
 
 .tile_content p {
-	margin-bottom: 0px;
 }
 
 .tile_content .dropcap {
@@ -142,6 +150,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 .tile_content .more a {
 	float: right;
 	padding-top: 5px;
+	margin-top: -10px;
 }
 
 .tile_content .date {
@@ -149,9 +158,8 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	font-style: italic;
 }
 
-
-
 .footer {
+	position: relative;
 	height: 40px;
 	width: 960px;
 	padding: 10px 0;
@@ -162,6 +170,13 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 
 .footer_content_left {
 	float: left;
+}
+
+.footer_content_center {
+	position: absolute;
+	text-align: center;
+	float: left;
+	width: 100%;
 }
 
 .footer_content_right {
@@ -179,9 +194,36 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 }
 
 
+
+.more-link {
+	margin-top: 10px;
+	margin-left: 15px;
+	height: 30px;
+}
+
+.fb-like-caption {
+	float: left;
+}
+
+.fb-like {
+	width: 80px;
+	float: left;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+
+.tile_biography {
+	margin: 20px;
+	padding-top: 20px;
+	padding-bottom: 5px;
+	background: #DDDDAA;
+}
+
 .bio_images {
 	text-align: center;
 	font-style: italic;
+	font-size: 80%;
 }
 
 .bio_image {
@@ -193,6 +235,11 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 
 .bio_video {
 	float: right;
+	margin-left: 20px;
+	margin-right: 20px;
+	text-align: center;
+	font-style: italic;
+	font-size: 0.8em;
 }
 
 
@@ -259,10 +306,13 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 
 .lyrics_table {
 	text-align: center;
+	margin: 10px;
+	width: 98%;
 }
 
 .lyrics_table td {
 	vertical-align: top;
+	width: 33%;
 }
 
 .lyrics_table .album_title span {
@@ -278,11 +328,17 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	padding-bottom: 20px;
 }
 
+.song_list {
+	background: #DDDDAA;
+	margin: 10px;
+	padding: 10px;
+}
 
 .lyric_image {
 	float: right;
+	margin-top: 40px;
 	padding: 20px;
-	padding-right: 60px;
+	padding-right: 40px;
 	text-align: right;
 }
 
@@ -293,14 +349,19 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 }
 
 .lyric_author {
-	font-size: 120%;
 	font-style: italic;
 	padding-left: 40px;
 	padding-bottom: 10px;
 }
 
 .lyrics {
-	padding-left: 30px;
+	width: 53%;
+	margin: 20px;
+	margin-left: 40px;
+	margin-top: 0px;
+	padding: 20px;
+	padding-left: 10px;
+	background: #DDDDAA;
 }
 
 
@@ -333,11 +394,23 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	float: left;
 	margin-right: 8px;
 }
-.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container *w/
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
 	clear:both;
 	height:0;
 	font-size: 1px;
 	line-height: 0px;
 }
--->
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
 

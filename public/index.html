@@ -2,12 +2,37 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
 	<title>The Wakami Wailers</title>
-	<link rel="stylesheet" type="text/css" href="style/style.css" />
+	<link rel="stylesheet" type="text/css" href="style/style.css"></link>
+	<script src="http://connect.facebook.net/en_US/all.js"></script>
+	<script type="text/javascript" src="/javascripts/javascripts.js"></script>
 </head>
 
 <body>
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : 'YOUR_APP_ID', // App ID
+      channelUrl : '//WWW.YOUR_DOMAIN.COM/channel.html', // Channel File
+      status     : true, // check login status
+      cookie     : true, // enable cookies to allow the server to access the session
+      xfbml      : true  // parse XFBML
+    });
+
+    // Additional initialization code here
+  };
+
+  // Load the SDK Asynchronously
+  (function(d){
+     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     ref.parentNode.insertBefore(js, ref);
+   }(document));
+</script>
 
 <div class="container">
 
@@ -15,10 +40,10 @@
 		<div class="logo">
 			<a href="index.html"><img class="logo" src="img/wakami_wailers_title2_FFFFCC.jpg"/></a>
 		</div>
+    <div class="menuitem selected"><a href="index.html">Home</a></div>
     <div class="menuitem"><a href="biography.html">Biography</a></div>
     <div class="menuitem"><a href="albums.html">Albums</a></div>
     <div class="menuitem"><a href="lyrics.html">Lyrics</a></div>
-    <div class="menuitem"><a href="contact.html">Contact</a></div> 
 	</div>
 
 	<div class="header_image">
@@ -29,18 +54,18 @@
 
 		<div class="tile_left">
 
-			<div class="tile_content">
+			<div class="tile_content clearfix">
 				<p><span class="dropcap">The Wakami Wailers</span> have been performing their unique brand of cultural interpretation for over 30 years. Through their music, humour, and stories, they transport audiences back to simpler times, when Canada was a young developing country occupied by trappers, minors, settlers, and lumberjacks.</p>
 				<p class="more"><a href="biography.html">Learn more about the band...</a></p>
 			</div>
 
-			<div class="tile_content">
+			<div class="tile_content clearfix">
 				<p><span class="dropcap">Music</span></p>
 				<p>Three award winning albums have been recorded by the Wakami Wailers, in addition to the soundtracks for three films. You can listen to samples of their music online, and their albums are available to purchase as CDs or downloadable in MP3 format from iTunes.</p>
 				<a href="albums.html"><img src="img/cover_thelastofthewhitepineloggers.jpg"></img></a>
 				<a href="albums.html"><img src="img/cover_waltzwiththewoods.jpg"></img></a>
 				<a href="albums.html"><img src="img/cover_riverthroughthepines.jpg"></img></a>
-				<p class="more"><a href="albums.html">Buy or listen to music...</a></p>
+				<p class="more"><br/><a href="albums.html">Buy or listen to music...</a></p>
 			</div>
 
 		</div>
@@ -48,15 +73,11 @@
 		<div class="tile_right">
 
 			<div class="tile_content">
-				<p><span class="dropcap">Facebook</span></p>
-				<iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fwakamiwailers&amp;width=300&amp;height=50&amp;colorscheme=light&amp;show_faces=false&amp;border_color=%23213C63&amp;stream=false&amp;header=false" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-			</div>
-
-			<div class="tile_content">
 				<p><span class="dropcap">News</span></p>
-				<p><span class="date">April 24, 2012 - </span> The Wakami Wailers are currently working on new material for an upcoming album planned for release in the Spring of 2013. The new album will focus on the history and landscape of the province of Ontario.</p>
+				<p><span class="date">April 24, 2012 - </span> The Wakami Wailers are currently working on new material for an upcoming album planned for release in 2013. The new album will focus on the history and landscape of the province of Ontario.</p>
+				<p>Like the Wailers on Facebook to stay up to date!</p>
+				<iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fwakamiwailers&amp;width=100&amp;height=50&amp;colorscheme=light&amp;show_faces=false&amp;border_color=%23213C63&amp;stream=false&amp;header=false" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 			</div>
-
 		</div>
 
 	</div>
@@ -73,6 +94,10 @@
 
 		<div class="footer_content_right">
 			<p><a href="terms_of_use.html">Terms of Use</a></p>
+		</div>
+
+		<div class="footer_content_center">
+			<p><a href="mailto:wakamiwailers@gmail.com">wakamiwailers@gmail.com</a></p>
 		</div>
 
 	</div>
