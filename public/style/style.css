@@ -173,9 +173,11 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 
 .footer_content_center {
 	position: absolute;
+	left: 320px;
 	text-align: center;
 	float: left;
-	width: 100%;
+	width: 33%;
+	font-weight: bold;
 }
 
 .footer_content_right {
@@ -371,6 +373,13 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	font-size: 0.95em;
 }
 
+
+.tile_wide {
+	margin: 20px;
+	padding-top: 20px;
+	padding-bottom: 5px;
+	background: #DDDDAA;
+}
 
 .contact_table {
 	margin: 10px;
