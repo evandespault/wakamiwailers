@@ -64,8 +64,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 }
 
 .selected a {
-	text-decoration: underline;
-	background-image: url(../img/wakami_wailers_title2_FFFFCC.jpg);
+	border-bottom: 2px solid black;
 }
 
 .menuitem a:hover, a:active, a:focus { 
@@ -332,6 +331,12 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	background: #DDDDAA;
 	margin: 10px;
 	padding: 10px;
+	color: #666666; 
+	font-size: 0.95em;
+}
+
+.song_list a {
+	font-weight: bold;
 }
 
 .lyric_image {
@@ -352,6 +357,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	font-style: italic;
 	padding-left: 40px;
 	padding-bottom: 10px;
+	font-size: 0.95em;
 }
 
 .lyrics {
@@ -362,6 +368,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	padding: 20px;
 	padding-left: 10px;
 	background: #DDDDAA;
+	font-size: 0.95em;
 }
 
 
