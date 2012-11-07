@@ -246,6 +246,8 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 
 
 .album {
+	margin-top: -20px;
+	margin-bottom: 15px;
 	padding: 20px;
 	padding-bottom: 0px;
 	overflow: hidden;
