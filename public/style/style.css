@@ -142,7 +142,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 .tile_content p {
 }
 
-.tile_content .dropcap {
+.dropcap {
 	font-size: 150%;
 }
 
